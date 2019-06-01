@@ -1,0 +1,48 @@
+//
+// Import Custom SB Admin 2 Variables (Overrides Default Bootstrap Variables) //
+//
+@import "admin/variables.scss";
+
+//
+// Import Bootstrap //
+//
+@import '~bootstrap/scss/bootstrap';
+
+//
+// FontAwesome //
+//
+@import "font-awesome/scss/fontawesome";
+@import "font-awesome/scss/regular";
+@import "font-awesome/scss/solid";
+@import "font-awesome/scss/brands";
+@import "font-awesome/scss/v4-shims";
+
+//
+// DataTables //
+//
+@import "admin/datatables/dataTables.bootstrap4.min";
+
+//
+// Import Custom SB Admin 2 Mixins and Components//
+//
+@import "admin/mixins.scss";
+@import "admin/global.scss";
+@import "admin/utilities.scss";
+
+//
+// Custom Components //
+//
+@import "admin/dropdowns.scss";
+@import "admin/navs.scss";
+@import "admin/buttons.scss";
+@import "admin/cards.scss";
+@import "admin/charts.scss";
+@import "admin/login.scss";
+@import "admin/error.scss";
+@import "admin/footer.scss";
+
+//
+//Custom Imports //
+//
+@import "admin/custom";
+@import "notify/notify";

@@ -1,0 +1,157 @@
+.notify-container {
+  position: fixed;
+  bottom: 15px;
+  width: 330px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.notify-container .notify-container-wrapper {
+  position: relative;
+}
+
+.notify-container .notify-item {
+  position: relative;
+  top: 15px;
+  padding: 12px;
+  border-radius: 5px;
+  display: table;
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 0;
+  color: #fff;
+}
+
+.notify-container .notify-item .notify-close,
+.notify-container .notify-item .notify-message,
+.notify-container .notify-item .notify-icon {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.notify-container .notify-item .notify-icon {
+  font-size: 30px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+
+.notify-container .notify-item .notify-message {
+  padding: 0 7px;
+  font-size: 13px;
+}
+
+.notify-container .notify-item .notify-message .notify-item-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.notify-container .notify-item .notify-close {
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.notify-container .notify-item.notify-error {
+  background: #dc3545;
+  color: #fff;
+}
+
+.notify-container .notify-item.notify-warning {
+  background: #ffc107;
+  color: #fff;
+}
+
+.notify-container .notify-item.notify-info {
+  background: #17a2b8;
+  color: #fff;
+}
+
+.notify-container .notify-item.notify-success {
+  background: #28a745;
+  color: #fff;
+}
+
+.notify-container .notify-item:last-child {
+  margin-bottom: 0;
+}
+
+.notify-container {
+  position: fixed;
+  bottom: 15px;
+  width: 330px;
+  margin: 0 auto;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  .notify-container-wrapper {
+    position: relative;
+  }
+
+  .notify-item {
+    position: relative;
+    top: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    display: table;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0;
+    color: #fff;
+
+    .notify-close,
+    .notify-message,
+    .notify-icon {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .notify-icon {
+      font-size: 30px;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+      filter: alpha(opacity=50);
+      -moz-opacity: 0.50;
+      -khtml-opacity: 0.50;
+      opacity: 0.50;
+    }
+
+    .notify-message {
+      padding: 0 7px;
+      font-size: 13px;
+      .notify-item-title {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+
+    .notify-close {
+      padding: 10px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    &.notify-error {
+      background: $danger;
+    }
+
+    &.notify-warning {
+      background: $warning;
+    }
+
+    &.notify-info {
+      background: $info;
+    }
+
+    &.notify-success {
+      background: $success;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
